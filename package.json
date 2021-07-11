@@ -1,0 +1,43 @@
+{
+  "name": "react-component-is",
+  "version": "1.0.0",
+  "description": "A library that allows you to use Vue's Dynamic Component syntax in React.",
+  "main": "dist/index.js",
+  "private": false,
+  "files": [ "dist", "README.md", "LICENSE" ],
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf dist",
+    "compile": "npm run clean && cross-env NODE_ENV=production babel src --out-dir dist --copy-files",
+    "fix": "yarn fix:eslint && yarn fix:prettier",
+    "fix:eslint": "yarn lint:eslint --fix",
+    "fix:prettier": "yarn lint:prettier --write",
+    "lint": "yarn lint:eslint && yarn lint:prettier",
+    "lint:eslint": "eslint .",
+    "lint:prettier": "prettier . --check"
+  },
+  "peerDependencies": {
+    "react": ">=16.6.0",
+    "react-dom": ">=16.6.0"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.5",
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-react": "^7.14.5",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-macros": "^3.1.0",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.30.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.3.2",
+    "rimraf": "^3.0.2"
+  }
+}
