@@ -12,7 +12,7 @@ A plain usage of this library is something like:
 import React from 'react'
 import Component from 'react-component-is'
 
-export default function myAmazingComponent() {
+export default function myAmazingComponent () {
   const clickable = false
 
   return <Component is={clickable ? 'button' : 'div'}>Lorem ipsum</Component>
@@ -26,7 +26,7 @@ import React from 'react'
 import Component from 'react-component-is'
 import MyCustomButton from './MyCustomButton'
 
-export default function myAmazingComponent() {
+export default function myAmazingComponent () {
   const clickable = false
 
   return (
@@ -36,3 +36,8 @@ export default function myAmazingComponent() {
   )
 }
 ```
+
+## Alternatives
+
+As this library is just a simple wrapper for createElement you can of course just use React's
+own [createElement](https://reactjs.org/docs/react-api.html#createelement) instead.
