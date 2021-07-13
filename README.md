@@ -5,6 +5,20 @@ A React library that allows you to use a Vue-esque Dynamic Component syntax (`<c
 It's just a Vue friendly wrapper for `React.createElement()`. See the [alternatives](#alternatives) section for tips on
 how to avoid using this library in its entirety.
 
+## Installation
+
+Yarn:
+
+```
+yarn add react-component-is
+```
+
+npm:
+
+```
+npm install --save react-component-is
+```
+
 ## Usage
 
 A simple usage of this library is something like the following:
