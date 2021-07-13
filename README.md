@@ -12,9 +12,7 @@ A plain usage of this library is something like:
 import React from 'react'
 import Component from 'react-component-is'
 
-export default function myAmazingComponent () {
-  const clickable = false
-
+export default function myAmazingComponent ({ clickable }) {
   return <Component is={clickable ? 'button' : 'div'}>Lorem ipsum</Component>
 }
 ```
@@ -26,9 +24,7 @@ import React from 'react'
 import Component from 'react-component-is'
 import MyCustomButton from './MyCustomButton'
 
-export default function myAmazingComponent () {
-  const clickable = false
-
+export default function myAmazingComponent ({ clickable }) {
   return (
     <Component is={clickable ? MyCustomButton : 'div'} large={true}>
       Lorem ipsum
