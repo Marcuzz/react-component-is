@@ -1,6 +1,6 @@
 {
   "name": "react-component-is",
-  "version": "0.0.0",
+  "version": "1.0.1",
   "description": "A library that allows you to use Vue's Dynamic Component syntax in React.",
   "main": "dist/index.js",
   "private": false,
