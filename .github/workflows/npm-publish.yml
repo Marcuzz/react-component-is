@@ -30,6 +30,7 @@ jobs:
       - run: yarn install --frozen-lockfile
       - run: yarn compile
       - run: PACKAGE_VERSION=$(echo $GITHUB_REF | sed -r "s/^refs\/tags\/(.*)/\1/" | sed -r "s/^v(.*)/\1/")
+      - run: echo $PACKAGE_VERSION
       - run: npm version $PACKAGE_VERSION --git-tag-version=false
       - run: npm publish
         env:
